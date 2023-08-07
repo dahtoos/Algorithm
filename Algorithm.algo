@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR
+    letter : INTEGER;
+    word : INTEGER;
+    vowels : INTEGER;
+    sentence : INTEGER;
+BEGIN
+    Read(sentence)
+    FOR i FROM min TO max STEP step  DO
+    letter = letter + 1
+    IF (i = " ") THEN
+    letter:= letter + 1;
+    END_IF
+    SWITCH (i) DO
+        case a : vowels=vowels + 1; BREAK;
+        case e : vowels=vowels + 1; BREAK;
+        case i : vowels=vowels + 1; BREAK;
+        case o : vowels=vowels + 1; BREAK;
+        case u : vowels=vowels + 1; BREAK;
+    END_SWITCH
+    END_FOR
+    
+END
