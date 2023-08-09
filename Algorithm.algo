@@ -3,13 +3,14 @@ VAR
     letter : INTEGER;
     word : INTEGER;
     vowels : INTEGER;
-    sentence : INTEGER;
+    sentence : STRING;
 BEGIN
     Read(sentence)
-    FOR i FROM min TO max STEP step  DO
+    word = word + 1
+    FOR i FROM 0 TO 20 STEP step 1 DO
     letter = letter + 1
     IF (i = " ") THEN
-    letter:= letter + 1;
+    word:= word + 1;
     END_IF
     SWITCH (i) DO
         case a : vowels=vowels + 1; BREAK;
@@ -20,4 +21,10 @@ BEGIN
     END_SWITCH
     END_FOR
     
+END
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    set_instructions
 END
